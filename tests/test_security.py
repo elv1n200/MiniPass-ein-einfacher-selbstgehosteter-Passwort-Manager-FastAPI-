@@ -1,5 +1,6 @@
 import os
 
+
 from app import security
 
 os.environ["MINIPASS_SECRET_KEY"] = security.base64.urlsafe_b64encode(b"0" * 32).decode()
